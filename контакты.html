@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Байланыс</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .contact-info div {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        .contact-info h3 {
+            color: #4CAF50;
+        }
+        .contact-form {
+            margin-top: 40px;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        /* Стиль для карты */
+        .map-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Байланыс</h1>
+</header>
+
+<div class="content">
+    <h2>Бізбен қалай байланысуға болады?</h2>
+
+    <div class="contact-info">
+        <div>
+            <h3>Біздің мекенжайымыз</h3>
+            <p>Алматы қаласы, Үлгі көшесі, 123</p>
+        </div>
+        <div>
+            <h3>Телефон</h3>
+            <p><strong>+777 777 77 77</strong></p>
+            <p>Сенбі және жексенбі күндері сағат 9:00-18:00 аралығында қоңырауларыңызға қуана жауап береміз.</p>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <div>
+            <h3>Электрондық пошта</h3>
+            <p><strong>Qazaqstore@gmail.com</strong></p>
+            <p>Бізге хат жазсаңыз, 24 сағат ішінде жауап береміз.</p>
+        </div>
+        <div>
+            <h3>Әлеуметтік желілер</h3>
+            <p>Бізді әлеуметтік желілерде қадағалаңыз:</p>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Бізге хат жіберіңіз</h2>
+    <p>Төмендегі форманы толтырып, бізге хабарлама қалдырыңыз, және біз сізге қысқа мерзімде жауап береміз.</p>
+
+    <div class="contact-form">
+        <form action="submit_form.php" method="POST">
+            <label for="name">Атыңыз</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Электрондық поштаңыз</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Хабарламаңыз</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Хабарлама жіберу</button>
+        </form>
+    </div>
+
+    <!-- Карта -->
+    <div class="map-container">
+        <h2>Біздің мекен-жайымыз картасында</h2>
+        <iframe src="https://yandex.kz/maps/-/CHEHZR1B" loading="lazy"></iframe>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 QazaqStore🛒. Барлық құқықтар қорғалған.</p>
+</footer>
+
+</body>
+</html>

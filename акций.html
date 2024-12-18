@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Басты бет</title>
+    <style>
+        /* Негізгі стильдер */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /* Басқару */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        /* Бағдарламалық мәзір */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            display: block;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        /* Негізгі сурет блогы */
+        .hero {
+            position: relative;
+            background-image: url('hero-image.jpg'); /* Өз суретіңіздің жолын енгізіңіз */
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        .hero button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .hero button:hover {
+            background-color: #45a049;
+        }
+        /* Акциялар бөлімі */
+        .promotions {
+            background-color: #ff5722;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .promotions h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .promotion-items {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .promotion-item {
+            background-color: white;
+            color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .promotion-item:hover {
+            transform: scale(1.05);
+        }
+        .promotion-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .promotion-item h3 {
+            font-size: 1.4em;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .promotion-item p {
+            padding: 10px;
+            font-size: 1.1em;
+        }
+        .promotion-item .price {
+            font-size: 1.4em;
+            color: #4CAF50;
+            padding: 0 15px 10px;
+        }
+        .promotion-item .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        .promotion-item .button:hover {
+            background-color: #45a049;
+        }
+        /* Төменгі бөлім */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Біздің дүкенге қош келдіңіз!</h1>
+    <p>Электроника және гаджеттер саласындағы ең жақсы таңдау.</p>
+</header>
+
+
+<!-- Акциялар бөлімі -->
+<div class="promotions">
+    <h2>Аптаның Акциялары!</h2>
+    <div class="promotion-items">
+        <!-- Мысал акциясы -->
+        <div class="promotion-item">
+            <img src="12.jpg" alt="Акция 1">
+            <h3>iPhone 15-ке 20% жеңілдік</h3>
+            <p>Айдың соңына дейін iPhone 15 Pro сатып алсаңыз, 20% жеңілдік алыңыз.</p>
+            <p class="price">799,990 тг <span style="text-decoration: line-through;">999,990 тг</span></p>
+            <button class="button">Қазір сатып алу</button>
+        </div>
+
+        <div class="promotion-item">
+            <img src="22.webp" alt="Акция 2">
+            <h3>Samsung смартфондары бонуспен</h3>
+            <p>Samsung Galaxy S22 Ultra сатып алыңыз да, сыйлық ретінде аксессуарлар алыңыз!</p>
+            <p class="price">499,990 тг</p>
+            <button class="button">Акцияны көру</button>
+        </div>
+
+        <div class="promotion-item">
+            <img src="777.jpg" alt="Акция 3">
+            <h3>iPad Pro-ға 15% жеңілдік</h3>
+            <p>iPad Pro 12.9" 128GB арнайы бағамен сатылымда.</p>
+            <p class="price">849,990 тг <span style="text-decoration: line-through;">999,990 тг</span></p>
+            <button class="button">Қазір сатып алу</button>
+        </div>
+    </div>
+</div>
+
+<!-- Төменгі бөлім -->
+<footer>
+    <p>&copy; 2024 Сіздің Компанияңыз. Барлық құқықтар қорғалған.</p>
+</footer>
+
+</body>
+</html>

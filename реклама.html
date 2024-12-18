@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Басты бет</title>
+    <style>
+        /* Негізгі стильдер */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        header .logo {
+            max-width: 150px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        header .logo a {
+            color: white;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+            height: 200px; /* Суреттердің биіктігі */
+            object-fit: cover; /* Суреттердің дұрыс масштабталуы */
+        }
+        .product h3 {
+            color: #333;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #555;
+            font-size: 1em;
+        }
+        .product .price {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .product button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .product button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html"><h1>КАТАЛОГ</h1></a>
+    </div> 
+</header>
+
+<div class="content">
+    <h2>Танымал тауарлар</h2>
+
+    <div class="product-grid">
+        <!-- Iphone 15 Pro Max -->
+        <div class="product">
+            <img src="12.jpg" alt="Iphone 15 Pro Max">
+            <h3>Iphone 15 Pro Max</h3>
+            <p>Apple iPhone 15 Pro 128ГБ White Titanium сатып алу</p>
+            <p class="price">799,990 тг</p>
+            <button>Себетке қосу</button>
+        </div>
+
+        <!-- Iphone 12 Pro Max -->
+        <div class="product">
+            <img src="112.jpg" alt="Iphone 12 Pro Max">
+            <h3>Iphone 12 Pro Max</h3>
+            <p>iPhone 12 Pro Max 512GB ұялы телефон Graphite/Grey</p>
+            <p class="price">599,990 тг</p>
+            <button>Себетке қосу</button>
+        </div>
+
+        <!-- Iphone 14 Pro Max -->
+        <div class="product">
+            <img src="14.webp" alt="Iphone 14 Pro Max">
+            <h3>Iphone 14 Pro Max</h3>
+            <p>Brand New Apple iPhone 14 Pro Silver Max 1 TB GSM</p>
+            <p class="price">699,990 тг</p>
+            <button>Себетке қосу</button>
+        </div>
+
+        <!-- Samsung Galaxy S22 Ultra -->
+        <div class="product">
+            <img src="22.webp" alt="Samsung Galaxy S22 Ultra">
+            <h3>Samsung Galaxy S22 Ultra</h3>
+            <p>Смартфон Samsung Galaxy S22 Ultra 256GB Phantom Black</p>
+            <p class="price">499,990 тг</p>
+            <button>Себетке қосу</button>
+        </div>
+
+        <!-- iPad Pro 12.9" -->
+        <div class="product">
+            <img src="55.webp" alt="iPad Pro 12.9">
+            <h3>iPad Pro 12.9"</h3>
+            <p>Apple iPad Pro 12.9" 128GB Wi-Fi + Cellular планшеті</p>
+            <p class="price">849,990 тг</p>
+            <button>Себетке қосу</button>
+        </div>
+
+        <!-- Apple Watch Series 7 -->
+        <div class="product">
+            <img src="777.jpg" alt="Apple Watch Series 7">
+            <h3>Apple Watch Series 7</h3>
+            <p>Apple Watch Series 7 GPS, 41мм смарт сағаты</p>
+            <p class="price">299,990 тг</p>
+            <button>Себетке қосу</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Сіздің Компанияңыз. Барлық құқықтар қорғалған.</p>
+</footer>
+
+</body>
+</html>
